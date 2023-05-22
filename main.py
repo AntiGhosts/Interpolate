@@ -1,9 +1,9 @@
-i = int(input ("Quer interpolar quantas vezes?\n"))
-v = int(input("Qual é o primeiro valor da ponta?\n"))
-v2 = int(input("Qual é o segundo valor da ponta?\n"))
-cb = input ("Pra cima ou pra baixo?(c/b)\n").upper()
+i = int(input ("How many times do you want to interpolate?\n"))
+v = int(input("What is the first tip value?\n"))
+v2 = int(input("What is the second tip value?\n"))
+cb = input ("up or down?(u/d)\n").upper()
 a = 0
-if cb == 'c':
+if cb == 'u':
   r1 = v+v2
   r2 = r1/2
   for a in range(0,i,a+1):
@@ -13,7 +13,7 @@ if cb == 'c':
     tf = t/2
     print(rf2)
 
-if cb == 'b':
+if cb == 'd':
   r1 = v+v2
   r2 = r1/2
   for a in range(0,i,a+1):
